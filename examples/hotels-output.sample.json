@@ -1,0 +1,27 @@
+[
+  {
+    "hotelId": "200703241029455940",
+    "hotelName": "Caravela Beach Resort",
+    "source": "makemytrip",
+    "url": "https://www.makemytrip.com/hotels/hotel-details/?hotelId=200703241029455940&city=CTGOI&country=IN",
+    "hotelStars": 5,
+    "propertyType": "Resort",
+    "hotelAddress": "Varca Beach, Varca Village, Salcete - Goa, Goa",
+    "pinCode": "403721",
+    "geoLat": 15.209597,
+    "geoLong": 73.93258,
+    "overallRating": 4.4,
+    "ratingLabel": "Excellent",
+    "reviewsCount": 3357,
+    "subRatings": [
+      "Location: 4.5",
+      "Cleanliness: 4.5",
+      "Facilities: 4.3",
+      "Food: 4.2",
+      "Room: 4.2",
+      "Value For Money: 4.1",
+      "Child Friendliness: 4.3"
+    ],
+    "extractedAt": "2026-07-24T10:40:30+00:00"
+  }
+]

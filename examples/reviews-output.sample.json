@@ -1,0 +1,68 @@
+[
+  {
+    "reviewId": "01KXQ014AHMXEWYHEBNBX9ZSCY",
+    "hotelId": "200703241029455940",
+    "hotelName": "Caravela Beach Resort",
+    "hotelUrl": "https://www.makemytrip.com/hotels/hotel-details/?hotelId=200703241029455940&city=CTGOI&country=IN",
+    "source": "makemytrip",
+    "submittedAt": "2026-07-17",
+    "checkInMonth": "2026-07",
+    "reviewer": {
+      "name": "Sumit Khare",
+      "isAnonymous": false,
+      "reviewsWritten": null
+    },
+    "travelType": "COUPLE",
+    "roomName": "Deluxe Room Sea View",
+    "overallRating": 5,
+    "reviewText": "Amazing experience. Great service, good food and a beautiful property right on the beach. The staff went out of their way to make our anniversary special. Would happily come back.",
+    "title": "Wonderful beachside stay",
+    "usefulCount": 2,
+    "imagesCount": 3,
+    "images": [
+      {
+        "url": "https://r1imghtlak.mmtcdn.com/01KXQ0BJ0RC3Y4AHK99XWCQVMH.jpg",
+        "aiTags": ["palm_tree", "grass", "house", "car"]
+      },
+      {
+        "url": "https://r1imghtlak.mmtcdn.com/01KXQ0BJ12MZ8T7C2E5A9RQ4WN.jpg",
+        "aiTags": ["swimming_pool", "sky", "resort"]
+      },
+      {
+        "url": "https://r1imghtlak.mmtcdn.com/01KXQ0BJ1KP6D3F0YB8H7GJ2XL.jpg",
+        "aiTags": ["beach", "sea", "sand"]
+      }
+    ],
+    "ownerResponse": {
+      "text": "Dear Sumit, thank you for the wonderful review and for choosing Caravela Beach Resort for your anniversary. We look forward to welcoming you back soon!",
+      "date": "2026-07-18"
+    },
+    "markdownContent": "# Caravela Beach Resort review (MakeMyTrip)\n\n**Rating:** 5/5 ★★★★★\n**Travel type:** COUPLE\n**Room:** Deluxe Room Sea View\n**Stay month:** 2026-07\n\n## Wonderful beachside stay\nAmazing experience. Great service, good food and a beautiful property right on the beach. The staff went out of their way to make our anniversary special. Would happily come back.\n\n## Hotel response\nDear Sumit, thank you for the wonderful review and for choosing Caravela Beach Resort for your anniversary. We look forward to welcoming you back soon!",
+    "extractedAt": "2026-07-24T10:40:00+00:00"
+  },
+  {
+    "reviewId": "6204281054243107966-RV-889201",
+    "hotelId": "6204281054243107966",
+    "hotelName": "Hard Rock Hotel Goa",
+    "hotelUrl": "https://www.goibibo.com/hotels/hard-rock-goa-hotel-in-goa-6204281054243107966/",
+    "source": "goibibo",
+    "submittedAt": "2026-07-11",
+    "checkInMonth": "2026-06",
+    "reviewer": {
+      "name": "Priya",
+      "isAnonymous": false,
+      "reviewsWritten": "2 Reviews Written"
+    },
+    "travelType": "FAMILY",
+    "roomName": "Deluxe King Room",
+    "overallRating": 4,
+    "reviewText": "Great location and very clean rooms. Breakfast spread could be better but the pool and the evening music made up for it. Kids loved the property.",
+    "title": null,
+    "usefulCount": 0,
+    "imagesCount": 0,
+    "images": [],
+    "ownerResponse": null,
+    "markdownContent": "# Hard Rock Hotel Goa review (Goibibo)\n\n**Rating:** 4/5 ★★★★\n**Travel type:** FAMILY\n**Room:** Deluxe King Room\n**Stay month:** 2026-06\n\n## Review\nGreat location and very clean rooms. Breakfast spread could be better but the pool and the evening music made up for it. Kids loved the property.",
+    "extractedAt": "2026-07-24T10:40:12+00:00"
+  }
+]
