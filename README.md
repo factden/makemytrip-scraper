@@ -107,7 +107,7 @@ any scraping, review the platforms' Terms of Service and your local regulations 
 the data responsibly.
 
 **Do I need a MakeMyTrip / Goibibo account or proxies?** No. Everything runs inside the actor on Apify's
-infrastructure; the built-in datacenter proxy is bundled.
+infrastructure; no proxy setup needed.
 
 **Can I mix MakeMyTrip and Goibibo URLs?** Yes — that's the point. Put both in `startUrls` (or set
 `reviewSource: "both"` to pull both brands' reviews for the same hotel). The `source` field on every row tells you
