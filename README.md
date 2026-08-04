@@ -132,6 +132,7 @@ which platform it came from.
   ([docs](https://github.com/factden/g2-reviews-scraper))
 - [Indeed Jobs Scraper](https://apify.com/factden/indeed-jobs-scraper?fpr=factden)
   ([docs](https://github.com/factden/indeed-jobs-scraper))
+- [Airbnb Data Scraper](https://apify.com/factden/airbnb-data-scraper?fpr=factden) ([docs](https://github.com/factden/airbnb-data-scraper)) - Airbnb listings, prices, availability, occupancy, ADR/RevPAR & reviews; a pay-per-use AirDNA alternative.
 - [All FactDen actors →](https://apify.com/factden?fpr=factden)
 
 ---
