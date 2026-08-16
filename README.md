@@ -120,6 +120,7 @@ which platform it came from.
 
 ## Other scrapers by FactDen
 
+- [MCA India Company & Director Data Scraper](https://apify.com/factden/mca-company-director-scraper?fpr=factden) - India MCA company master + directors' personal email & phone
 - [Trip.com & Ctrip Reviews Scraper](https://apify.com/factden/ctrip-trip-reviews-scraper?fpr=factden)
   ([docs](https://github.com/factden/ctrip-trip-reviews-scraper))
 - [Google Hotels Scraper](https://apify.com/factden/google-hotels-scraper?fpr=factden)
