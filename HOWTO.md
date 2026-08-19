@@ -3,7 +3,7 @@
 Scraping MakeMyTrip and Goibibo directly is painful: anti-bot defenses, session requirements, rotating proxies, and a
 shared hotel identity that splits the same property's reviews across two brands. This guide skips all of that by using
 the [MakeMyTrip &amp; Goibibo Reviews Scraper](https://apify.com/factden/makemytrip-scraper?fpr=factden) actor on
-Apify — no login, no proxy setup, no anti-bot tuning.
+Apify, no login, no proxy setup, no anti-bot tuning.
 
 ## 1. Get an Apify token
 
@@ -13,10 +13,10 @@ Create a free [Apify](https://console.apify.com/sign-up?fpr=factden) account and
 ## 2. Run it from the Console (no code)
 
 1. Open the [actor page](https://apify.com/factden/makemytrip-scraper?fpr=factden) and click **Try for free**.
-2. The input is pre-filled with two example hotels — one MakeMyTrip URL and one Goibibo URL. Leave them or replace with
+2. The input is pre-filled with two example hotels, one MakeMyTrip URL and one Goibibo URL. Leave them or replace with
    your own hotel URLs (or raw hotel IDs).
 3. Click **Start**. A small run finishes in well under a minute.
-4. Download results from the **Output** tab as JSON, CSV, or Excel — switch the dropdown between **Reviews** and
+4. Download results from the **Output** tab as JSON, CSV, or Excel, switch the dropdown between **Reviews** and
    **Hotels**.
 
 ## 3. Or run it from code
@@ -58,20 +58,20 @@ so adding both links for the same property gives you both feeds. The `source` fi
 | Option | What it does |
 |---|---|
 | `hotelIds` | Raw hotel IDs (18-digit = MakeMyTrip, 19-digit = Goibibo) instead of full URLs. |
-| `maxReviews` | Max reviews per hotel (10–20,000). Each hotel bills a minimum of 10, the most recent. |
+| `maxReviews` | Max reviews per hotel (10-20,000). Each hotel bills a minimum of 10, the most recent. |
 | `sortBy` | `mostRelevant`, `mostRecent`, `helpful`, `positive`, `negative`. |
-| `fromDate` | Return only reviews on or after this date (`YYYY-MM-DD`). Applied after retrieval, not a fetch/bill limit. |
+| `fromDate` | Keep only reviews on or after this date (`YYYY-MM-DD`). The first 10 per hotel (page 1) are always retrieved and billed; the filter applies beyond them. |
 
 Full field reference: [`FIELDS.md`](./FIELDS.md). Full input format: [`examples/input.json`](./examples/input.json).
 
 ## 6. Get hotel details for free
 
-Every run also emits a **Hotels** dataset — star class, property type, address, PIN code, geo-coordinates, aggregate
-rating, tier label, and the clubbed sub-ratings — at no extra charge, on every run alongside the reviews.
+Every run also emits a **Hotels** dataset, star class, property type, address, PIN code, geo-coordinates, aggregate
+rating, tier label, and the clubbed sub-ratings, at no extra charge, on every run alongside the reviews.
 
 ## 7. Feed it to an LLM
 
-Each review includes a ready-to-use `markdownContent` field — no formatting needed:
+Each review includes a ready-to-use `markdownContent` field, no formatting needed:
 
 ```python
 docs = [row["markdownContent"] for row in items]
