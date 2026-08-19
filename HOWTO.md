@@ -29,7 +29,7 @@ from apify_client import ApifyClient
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
 run = client.actor("factden/makemytrip-scraper").call(run_input={
     "startUrls": ["https://www.makemytrip.com/hotels/hotel-details/?hotelId=200703241029455940&city=CTGOI&country=IN"],
-    "maxReviewsPerHotel": 200,
+    "maxReviews": 200,
 })
 items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
 print(f"Got {len(items)} reviews")
@@ -39,18 +39,17 @@ See [`snippets/`](./snippets) for Node and curl versions.
 
 ## 4. Mix MakeMyTrip and Goibibo freely
 
-Put both URL types in `startUrls`, or drop raw hotel IDs into `hotelIds`. Because the two brands share one hotel
-identity, you can also set `reviewSource: "both"` to pull **both brands' reviews for the same hotel**. The `source`
-field on every row (`makemytrip` / `goibibo`) tells you which platform it came from, so you can split or merge the two
-corpora downstream.
+Put both URL types in `startUrls`, or drop raw hotel IDs into `hotelIds`. Each link returns its own site's reviews
+(a MakeMyTrip link -> MakeMyTrip reviews, a Goibibo link -> Goibibo reviews). The two brands share one hotel identity,
+so adding both links for the same property gives you both feeds. The `source` field on every row (`makemytrip` /
+`goibibo`) tells you which platform it came from, so you can split or merge the two corpora downstream.
 
 ```json
 {
   "startUrls": [
     "https://www.makemytrip.com/hotels/hotel-details/?hotelId=200703241029455940&city=CTGOI&country=IN",
     "https://www.goibibo.com/hotels/hard-rock-goa-hotel-in-goa-6204281054243107966/"
-  ],
-  "reviewSource": "auto"
+  ]
 }
 ```
 
@@ -59,19 +58,16 @@ corpora downstream.
 | Option | What it does |
 |---|---|
 | `hotelIds` | Raw hotel IDs (18-digit = MakeMyTrip, 19-digit = Goibibo) instead of full URLs. |
-| `reviewSource` | `auto`, `makemytrip`, `goibibo`, or `both`. |
-| `maxReviewsPerHotel` | Cap reviews per hotel (controls cost). Set `0` for **hotel details only** — no review charge. |
+| `maxReviews` | Max reviews per hotel (10–20,000). Each hotel bills a minimum of 10, the most recent. |
 | `sortBy` | `mostRelevant`, `mostRecent`, `helpful`, `positive`, `negative`. |
-| `fromDate` / `toDate` | Only reviews in a date window (`YYYY-MM-DD`). |
-| `minRating` / `maxRating` | Filter by overall rating (1–5). |
+| `fromDate` | Return only reviews on or after this date (`YYYY-MM-DD`). Applied after retrieval, not a fetch/bill limit. |
 
 Full field reference: [`FIELDS.md`](./FIELDS.md). Full input format: [`examples/input.json`](./examples/input.json).
 
 ## 6. Get hotel details for free
 
 Every run also emits a **Hotels** dataset — star class, property type, address, PIN code, geo-coordinates, aggregate
-rating, tier label, and the clubbed sub-ratings — at no extra charge. Want just that? Set `maxReviewsPerHotel: 0` and
-pass a list of `hotelIds`.
+rating, tier label, and the clubbed sub-ratings — at no extra charge, on every run alongside the reviews.
 
 ## 7. Feed it to an LLM
 

@@ -2,7 +2,7 @@
 
 Sample input and real public review/hotel data collected with the actor.
 
-- **`input.json`** — a ready-to-run actor input (one MakeMyTrip hotel + one Goibibo hotel, with `reviewSource: "auto"`).
+- **`input.json`** — a ready-to-run actor input (one MakeMyTrip hotel + one Goibibo hotel; each link returns its own site's reviews).
 - **`reviews-output.sample.json`** — real review rows showing the full field shape: a MakeMyTrip row (Caravela Beach
   Resort, with review `images` + AI scene-tags and a hotel `ownerResponse`) and a Goibibo row (Hard Rock Hotel Goa,
   with `reviewer.reviewsWritten` and no owner response). Shows the nested `reviewer` / `ownerResponse` objects and the

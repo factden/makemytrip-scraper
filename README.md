@@ -55,8 +55,7 @@ run = client.actor("factden/makemytrip-scraper").call(run_input={
         "https://www.makemytrip.com/hotels/hotel-details/?hotelId=200703241029455940&city=CTGOI&country=IN",
         "https://www.goibibo.com/hotels/hard-rock-goa-hotel-in-goa-6204281054243107966/",
     ],
-    "reviewSource": "auto",
-    "maxReviewsPerHotel": 100,
+    "maxReviews": 100,
     "sortBy": "mostRecent",
 })
 for row in client.dataset(run["defaultDatasetId"]).iterate_items():
@@ -109,9 +108,9 @@ the data responsibly.
 **Do I need a MakeMyTrip / Goibibo account or proxies?** No. Everything runs inside the actor on Apify's
 infrastructure; no proxy setup needed.
 
-**Can I mix MakeMyTrip and Goibibo URLs?** Yes — that's the point. Put both in `startUrls` (or set
-`reviewSource: "both"` to pull both brands' reviews for the same hotel). The `source` field on every row tells you
-which platform it came from.
+**Can I mix MakeMyTrip and Goibibo URLs?** Yes — that's the point. Put both in `startUrls`; each link returns its own
+site's reviews, and the `source` field on every row tells you which platform it came from. Adding both links for the
+same property gives you both feeds.
 
 **Found a bug or want a field added?** Open an issue here, or use the **Issues** tab on the
 [Apify actor page](https://apify.com/factden/makemytrip-scraper?fpr=factden).

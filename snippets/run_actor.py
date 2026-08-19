@@ -14,8 +14,7 @@ run_input = {
         "https://www.makemytrip.com/hotels/hotel-details/?hotelId=200703241029455940&city=CTGOI&country=IN",  # MakeMyTrip
         "https://www.goibibo.com/hotels/hard-rock-goa-hotel-in-goa-6204281054243107966/",  # Goibibo
     ],
-    "reviewSource": "auto",
-    "maxReviewsPerHotel": 100,
+    "maxReviews": 100,
     "sortBy": "mostRecent",
 }
 

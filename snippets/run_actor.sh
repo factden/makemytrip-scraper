@@ -13,7 +13,6 @@ curl -s -X POST \
       "https://www.makemytrip.com/hotels/hotel-details/?hotelId=200703241029455940&city=CTGOI&country=IN",
       "https://www.goibibo.com/hotels/hard-rock-goa-hotel-in-goa-6204281054243107966/"
     ],
-    "reviewSource": "auto",
-    "maxReviewsPerHotel": 100,
+    "maxReviews": 100,
     "sortBy": "mostRecent"
   }'
