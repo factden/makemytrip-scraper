@@ -136,6 +136,7 @@ same property gives you both feeds.
 - [Airbnb Data Scraper](https://apify.com/factden/airbnb-data-scraper?fpr=factden) ([docs](https://github.com/factden/airbnb-data-scraper)) - Airbnb listings, prices, availability, occupancy, ADR/RevPAR & reviews; a pay-per-use AirDNA alternative.
 - [Agoda Hotel Reviews Scraper](https://apify.com/factden/agoda-hotel-reviews-scraper?fpr=factden)
   ([docs](https://github.com/factden/agoda-hotel-reviews-scraper))
+- [Fliggy Hotel Reviews Scraper](https://apify.com/factden/fliggy-hotel-reviews-scraper?fpr=factden) - Fliggy (飞猪) hotel reviews by city or URL, with per-dimension sub-ratings, sentiment tags & AI summaries ([docs](https://github.com/factden/fliggy-hotel-reviews-scraper))
 - [All FactDen actors →](https://apify.com/factden?fpr=factden)
 
 ---
