@@ -137,6 +137,7 @@ same property gives you both feeds.
 - [Agoda Hotel Reviews Scraper](https://apify.com/factden/agoda-hotel-reviews-scraper?fpr=factden)
   ([docs](https://github.com/factden/agoda-hotel-reviews-scraper))
 - [Fliggy Hotel Reviews Scraper](https://apify.com/factden/fliggy-hotel-reviews-scraper?fpr=factden) - Fliggy (飞猪) hotel reviews by city or URL, with per-dimension sub-ratings, sentiment tags & AI summaries ([docs](https://github.com/factden/fliggy-hotel-reviews-scraper))
+- [Traveloka Hotel & Activity Reviews Scraper](https://apify.com/factden/traveloka-hotel-reviews-scraper?fpr=factden) - Traveloka hotel & Xperience activity reviews with 1-10 ratings, category sub-scores, owner replies & English translation ([docs](https://github.com/factden/traveloka-hotel-reviews-scraper))
 - [All FactDen actors →](https://apify.com/factden?fpr=factden)
 
 ---
